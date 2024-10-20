@@ -1,0 +1,46 @@
+/*  `boxes` styles
+ *
+ *  Styles for boxes
+ *
+ *  @author Nícolas Dal Corso
+ *  @version 1.0.0
+ */
+
+ /* variables */
+
+:root {
+    --box-padding: 1rem;
+    --box-margin: 1rem;
+
+    --box-container-padding: 30px;
+    --box-container-margin: 30px;
+    --box-container-space-between:var(--box-container-margin);
+}
+
+/* styles */
+/*  Containers that hold boxes */
+
+/**
+ *  Box container horizontal, spaced
+ */
+.box-container-hor-spa {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: var(--box-container-padding);
+    margin: var(--box-container-margin);
+}
+
+
+
+
+/*  boxes   */
+.box-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: var(--box-padding);
+    margin: var(--box-margin);
+
+    border: 2px solid black;
+}

@@ -1,0 +1,13 @@
+/*  Labels, paragraphs and text spaces */
+
+/*
+ *  `text-space` that wraps itself to a new line at `n` characters
+ */
+.ts-wrap-n {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    hyphens: auto;
+
+    display: inline-block;
+    width: 100%;
+};
