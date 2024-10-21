@@ -44,3 +44,37 @@
 
     border: 2px solid black;
 }
+
+/**
+ *  Labelled boxes
+ *
+ *  box-container
+ *      box-label
+ *          text-space-label
+ *      box-text
+ *          text-space[-any]
+ */
+
+.box-labelled-container {
+    display:grid;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: var(--box-container-padding);
+    margin: var(--box-container-margin);
+}
+
+.box-label {
+    display: flex;
+    padding: var(--box-padding);
+    margin: var(--box-margin);
+    border: 2px solid black;
+}
+
+.box-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: var(--box-padding);
+    margin: var(--box-margin);
+    border: 2px solid black;
+}

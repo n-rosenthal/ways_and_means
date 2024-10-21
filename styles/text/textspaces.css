@@ -2,12 +2,34 @@
 
 /*
  *  `text-space` that wraps itself to a new line at `n` characters
+ *
+ *  Usage:
+ *
+ *  <p class="ts-wrap-n" style="max-width: 10ch">This text will wrap to a new line at 10 characters.</p>
  */
 .ts-wrap-n {
     white-space: pre-wrap;
+    line-break: anywhere;
+    word-break: break-all;
     word-wrap: break-word;
     hyphens: auto;
 
     display: inline-block;
     width: 100%;
 };
+
+/**
+ *  Text for labelled boxes
+ */
+#box-label-text {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    size: 80%;
+}
+
+#box-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    size: 80%;
+}
